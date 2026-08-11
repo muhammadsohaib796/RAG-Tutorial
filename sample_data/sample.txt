@@ -1,0 +1,19 @@
+Natural Language Processing (NLP) - An Introduction
+
+Natural Language Processing (NLP) is a subfield of artificial intelligence
+that focuses on the interaction between computers and humans through
+natural language. The ultimate goal of NLP is to enable computers to
+understand, interpret, and generate human language in a valuable way.
+
+Key Areas of NLP:
+1. Text Classification - Categorizing text into predefined groups
+2. Named Entity Recognition (NER) - Identifying entities like names, dates
+3. Sentiment Analysis - Determining the emotional tone of text
+4. Machine Translation - Translating text between languages
+5. Question Answering - Automatically answering questions from text
+
+NLP has become increasingly important with the rise of large language models
+(LLMs) like GPT, Claude, and LLaMA. These models have revolutionized how
+we interact with text data and build intelligent applications.
+
+This sample file is part of the Hope to Skill NLP course.
