@@ -55,3 +55,13 @@ for index, doc in enumerate(multi_docs):
     print(f"  Source: {source}")
     # :, inside the f-string adds commas to large numbers (e.g., 85432 → 85,432)
     print(f"  Content Length: {content_length:,} characters")
+
+
+#     What just happened?
+
+# Each URL became one Document (the entire page's text)
+# Web metadata includes source (URL), title, and sometimes description and language
+# The content might look messy — that's because web pages have navigation menus,
+# footers, and other text mixed in. We'll learn how to clean this in a later lecture!
+# Tip: {content_length:,} adds commas to large numbers (e.g., 85,432 instead of 85432).
+# A nice Python trick for readability!
