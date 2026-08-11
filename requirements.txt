@@ -1,0 +1,5 @@
+langchain 
+langchain-community 
+pypdf 
+beautifulsoup4 
+lxml
