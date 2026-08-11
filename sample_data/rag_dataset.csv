@@ -1,0 +1,6 @@
+id,title,category,content,author
+1,Introduction to NLP,Natural Language Processing,NLP focuses on the interaction between computers and humans through natural language.,Hope to Skill
+2,Text Classification,Natural Language Processing,Categorizing text into predefined groups like spam detection or topic labeling.,Hope to Skill
+3,Named Entity Recognition,Natural Language Processing,Identifying entities such as names, dates, and organizations in raw text data.,Hope to Skill
+4,Sentiment Analysis,Natural Language Processing,Determining the emotional tone or polarity behind a body of text.,Hope to Skill
+5,Retrieval-Augmented Generation,Advanced AI,RAG enhances LLMs by retrieving external context from a vector database before generation.,Hope to Skill
