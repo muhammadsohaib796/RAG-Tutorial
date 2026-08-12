@@ -47,3 +47,12 @@ def explore_pdf(file_path):
     return document
     # Try it! Replace 'data/sample.pdf' with your own PDF path if you have one
 pdf_docs = explore_pdf("D:\Sohaib\Agentic Ai\RAG TUTORIAL\sample_data\RAG_Masterclass_Guide.pdf")
+
+
+# What just happened?
+# We built a reusable function that works with any PDF. A few things to note:
+
+# min(3, len(documents)) makes sure we don't crash if the PDF has less than 3 pages
+# documents[0].metadata.keys() shows us what info the loader provides
+# The function returns the documents so you can use them later in your pipeline
+# Try this: Call explore_pdf() with a PDF from your own computer!
