@@ -3,3 +3,4 @@ langchain-community
 pypdf 
 beautifulsoup4 
 lxml
+langchain-text-splitters
