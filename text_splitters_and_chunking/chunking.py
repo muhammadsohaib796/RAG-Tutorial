@@ -103,3 +103,34 @@ print(full_text[:300])
 # There's no single "correct" size — it depends on your data and use case.
 # We'll experiment with different sizes later in this notebook!
 # =============================================================
+
+
+# Let's see what DIFFERENT chunk sizes look like on real text
+# We'll manually slice the text to build intuition BEFORE using LangChain
+
+# [:2000] takes only the first 2000 characters of our article for this demo
+# To use the full article, replace with: sample_text = full_text
+sample_text = full_text[:2000]
+
+# We'll test 3 different chunk sizes to see how they compare
+chunk_sizes = [100, 500, 1000]
+
+# This loop runs 3 times — once for each size in the list
+for size in chunk_sizes:
+    # // is integer division: 2000 // 500 = 4 chunks
+    num_chunks = len(sample_text) // size
+
+    # [:size] slices the text from the start to the chunk size
+    # If size=100, first_chunk = first 100 characters
+    # If size=500, first_chunk = first 500 characters
+    first_chunk = sample_text[:size]
+
+    print(f"\n{'=' * 60}")
+    print(f"CHUNK SIZE: {size} characters")
+    print(f"Number of chunks from 2000 chars: {num_chunks}")
+    print(f"First chunk preview:")
+    print(f"  '{first_chunk}'")
+
+    # [size-20:size] slices the LAST 20 characters of the first chunk
+    # This shows you where exactly the chunk gets cut off
+    print(f"  --- ends at: '...{sample_text[size - 20:size]}'")
