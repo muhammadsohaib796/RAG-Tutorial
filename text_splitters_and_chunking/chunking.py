@@ -134,3 +134,12 @@ for size in chunk_sizes:
     # [size-20:size] slices the LAST 20 characters of the first chunk
     # This shows you where exactly the chunk gets cut off
     print(f"  --- ends at: '...{sample_text[size - 20:size]}'")
+
+#     What just happened?
+# Look at where each chunk ends:
+
+# 100 chars — probably cuts in the middle of a sentence! The chunk makes no sense on its own.
+# 500 chars — might cut mid-paragraph, but at least has some context.
+# 1000 chars — likely contains a full paragraph or two. Much more useful.
+# The problem with simple slicing: It cuts at exact character counts, even if
+# that's in the middle of a word! That's why we need smart splitters (coming next).
